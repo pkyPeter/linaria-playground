@@ -76,5 +76,5 @@ linaria 會在 css 產出吃 css variable 的樣式定義，可在 dist/style.cs
 ```javascript=
 <div class="bbb0x40" style="--bbb0x40-0: 133px;">133</div>
 ```
-利用點擊 button，可以發現 style 中的 --bbb0x40-0 不斷地在增加。
+利用點擊 button，可以發現 style 中的 --bbb0x40-0 對應的值 (133px) 不斷地在增加。
 linaria 內部實際上透過 style props 傳入 { '--bbb0x40-0': recSize }，因而達到動態改變樣式的效果。 
